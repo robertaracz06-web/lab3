@@ -60,15 +60,61 @@
                 </fieldset>
                 <button type="submit">Trimite mesajul</button>
             </form>
-        </section>
-    </main>
+        </section>   
+    
+        <section id="messages-section">
+    <h2>Mesaje Primite</h2>
     <table border="1">
-        <caption>Mesaje primite</caption>
+        <caption>Listă detaliată a mesajelor primite de la utilizatori, grupate după expeditor</caption>
         <thead>
-            <th></th>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Nume</th>
+                <th scope="col">Email</th>
+                <th scope="col">Mesaj</th>
+                <th scope="col">Data</th>
+                <th scope="col">Prioritate</th>
+            </tr>
         </thead>
+        <tbody>
+            <tr>
+                <th scope="row" rowspan="2">1</th>
+                <td rowspan="2">Racz Otilia</td>
+                <td rowspan="2"><a href="mailto:raczoti1978@email.com">raczoti1978@email.com</a></td>
+                <td>Salut! Am o întrebare despre curs.</td>
+                <td>2026-03-09</td>
+                <td style="text-align: center;">
+                    <input type="checkbox" id="p1_2" name="priority">
+                </td>
+            </tr>
+            <tr>
+                <td>Revin, am găsit soluția, mersi!</td>
+                <td>2026-03-10</td>
+               <td style="text-align: center;">
+                    <input type="checkbox" id="p1_2" name="priority">
+                </td>
+            </tr>
 
+            <tr>
+                <th scope="row">2</th>
+                <td>Pusok Petra</td>
+                <td><a href="mailto:petra.pusok@email.com">petra.pusok@email.com</a></td>
+                <td>Pagina arată excelent!</td>
+                <td>2026-03-12</td>
+                <td style="text-align: center;">
+                    <input type="checkbox" id="p1_2" name="priority">
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="6">Total mesaje afișate: 3</td>
+            </tr>
+        </tfoot>
     </table>
+</section>
+    
+    </main>
     <footer>
         <p>Racz Roberta. Laboratorul 2.</p>
     </footer>
